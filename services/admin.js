@@ -663,7 +663,7 @@ async function send_verification_otp(data) {
     if (student_mobile != '') {
 
       let smsbody = config.registerotp.body.replace("#field1#", mobile_otp);
-      smsbody = smsbody.replace("#field2#", '+916289581169');// For Crestest MOBILE NO
+      smsbody = smsbody.replace("#field2#", '+916289581169');// For new MOBILE NO
 
       let smsdata = { phonenumber: student_mobile, body: encodeURI(smsbody) }
       helper.sendsms(smsdata);
@@ -1978,7 +1978,7 @@ async function send_verification_otp_update_class(data) {
   if (student_mobile != '') {
 
     let smsbody = config.OTP_update_Class.body.replace("#field1#", mobile_otp);
-    //smsbody = smsbody.replace("#field2#",'+916289581169');// For Crestest MOBILE NO
+    //smsbody = smsbody.replace("#field2#",'+916289581169');// For new MOBILE NO
 
     let smsdata = { phonenumber: student_mobile, body: encodeURI(smsbody) }
     helper.sendsms(smsdata);
@@ -2030,7 +2030,7 @@ if(data.fname !="" && data.lname !="" && data.mobile != "" && data.email != "" &
     if (student_mobile != '') {
 
       let smsbody = config.registerotp.body.replace("#field1#", mobile_otp);
-      smsbody = smsbody.replace("#field2#", '+916289581169');// For Crestest MOBILE NO
+      smsbody = smsbody.replace("#field2#", '+916289581169');// For new MOBILE NO
 
       let smsdata = { phonenumber: student_mobile, body: encodeURI(smsbody) }
       helper.sendsms(smsdata);

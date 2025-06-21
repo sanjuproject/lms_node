@@ -436,10 +436,10 @@ res.send({status:200,msg:"Migrate data created for event history"})
 				element.updated_at = element.updated_at.toISOString().slice(0,-1);
 				element.created_at = element.created_at.toISOString().slice(0,-1);
 				if(element.subject_image != null){
-				element.subject_image = element.subject_image.replace("clvdev.in","crestest.com").toString();
+				element.subject_image = element.subject_image.replace("clvdev.in","new.com").toString();
 				}
 				if(element.elibrary_image != null){
-					element.elibrary_image = element.elibrary_image.replace("clvdev.in","crestest.com").toString();
+					element.elibrary_image = element.elibrary_image.replace("clvdev.in","new.com").toString();
 				}
 				insert_query.push("INSERT INTO `subjects`(`id`, `exam_category_id`, `exam_type_id`, `exam_subtype_id`, `board_id`, `group_exist`, `group_subjects`, `subject_code`, `name`, `subject_color_code`, `subject_image`, `elibrary_image`, `status`, `is_deleted`, `created_at`, `updated_at`) VALUES ("+element.id+","+element.exam_category_id+","+element.exam_type_id+","+element.exam_subtype_id+","+element.board_id+","+element.group_exist+",'"+element.group_subjects+"','"+element.subject_code+"','"+element.name+"','"+element.subject_color_code+"','"+element.subject_image+"','"+element.elibrary_image+"',"+element.status+","+element.is_deleted+",'"+element.created_at+"','"+element.updated_at+"')");
 

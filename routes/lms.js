@@ -1242,13 +1242,13 @@ router.get('/getallexamcategories', adminMiddleware.validateToken, async functio
 // Set OTP to mobile no before login screen
 router.get('/sendpreloginotp', async function (req, res, next) {
 	try {
-		const email = "jaydeep.m@crestest.com";
+		const email = "jaydeep.m@new.com";
 		const mobile = 6289581169;
 		const otp = (Math.floor(100000 + Math.random() * 900000));
 
 		if (mobile != '') {
 			let smsbody = config.registerotp.body.replace("#field1#", otp);
-			smsbody = smsbody.replace("#field2#", '+916289581169');// For Crestest MOBILE NO
+			smsbody = smsbody.replace("#field2#", '+916289581169');// For new MOBILE NO
 
 			let smsdata = { phonenumber: mobile, body: encodeURI(smsbody) }
 			helper.sendsms(smsdata);

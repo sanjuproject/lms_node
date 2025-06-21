@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost","crestest_user","Hec16h?43","crestest_db");
+$conn = new mysqli("localhost","new_user","Hec16h?43","new_db");
 //$base_url_api = "https://lmsapi.clvdev.in";
 $base_url_api = "https://lmsapi.schemaphic.co.in";
 $base_url = "https://lms.schemaphic.co.in/";

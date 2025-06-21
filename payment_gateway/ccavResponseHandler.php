@@ -3,7 +3,7 @@
 //$base_url_api = "https://lmsapi.clvdev.in";
 //$base_url = "https://lms.schemaphic.co.in/";
 //$base_url = "https://lms.clvdev.in/";
-//$conn = new mysqli("localhost","crestest_user","oa2?Hi595","crestest_db");
+//$conn = new mysqli("localhost","new_user","oa2?Hi595","new_db");
 include("db_config.php");
 	error_reporting(0);
 	

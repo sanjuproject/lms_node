@@ -58,13 +58,13 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                 counter++;
             })
             if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1){  
             final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
             final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-            final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+            final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
             special_charectors_tags.forEach(tag_name=>{
                 
@@ -74,7 +74,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             })
 
             ////////////////////////////////////////////////////
@@ -84,13 +84,13 @@ async function demoexamscholaticquestion(data){
             option_image_ary.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_a;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_a++;
             })
             if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1){
                 final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors", 'assets/special_charectors/'))
                 final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
             special_charectors_tags.forEach(tag_name=>{
                 
@@ -100,7 +100,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ async function demoexamscholaticquestion(data){
             option_image_ary_b.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_b;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 
                 counter_option_b++;
             })
@@ -128,7 +128,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter++;
             })
             
@@ -141,7 +141,7 @@ async function demoexamscholaticquestion(data){
             option_image_ary_c.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_c;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_c++;
             })
             if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1){
@@ -156,7 +156,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             
             })
             ///////////////////////////////////////////////////////////
@@ -168,7 +168,7 @@ async function demoexamscholaticquestion(data){
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             
                  counter_option_d++;
              })
@@ -184,7 +184,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -196,7 +196,7 @@ async function demoexamscholaticquestion(data){
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -212,7 +212,7 @@ async function demoexamscholaticquestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -304,13 +304,13 @@ async function demoexamcompetitivequestion(data){
             question_image_ary.forEach(question_image=>{
                 let tagname = "#Img"+counter;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />') 
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />') 
                 counter++;
             })
             if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1){
                 final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
             final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-            final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+            final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
             special_charectors_tags.forEach(tag_name=>{                
                 let tagname = "#"+tag_name;
@@ -319,7 +319,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
              
             })
 
@@ -330,14 +330,14 @@ async function demoexamcompetitivequestion(data){
             option_image_ary.forEach(option_image=>{
                 let tagname = "Img"+counter_option_a;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_a++;
             })
             if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1){
 
                 final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors/'))
                 final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
             special_charectors_tags.forEach(tag_name=>{                
@@ -347,7 +347,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -358,7 +358,7 @@ async function demoexamcompetitivequestion(data){
             option_image_ary_b.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_b;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_b++;
             })
             if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -374,7 +374,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -385,7 +385,7 @@ async function demoexamcompetitivequestion(data){
             option_image_ary_c.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_c;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_c = final_question_option_c.replaceAll(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replaceAll(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_c++;
             })
             if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -401,7 +401,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -412,7 +412,7 @@ async function demoexamcompetitivequestion(data){
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d.replaceAll(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d.replaceAll(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                  counter_option_d++;
              })
              if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -428,7 +428,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
              ///////////////////////////////////////////////////////////
 
@@ -439,7 +439,7 @@ async function demoexamcompetitivequestion(data){
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -453,7 +453,7 @@ async function demoexamcompetitivequestion(data){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -674,14 +674,14 @@ if(subject_id != 0 && group_exist == 1){
                 question_image_ary.forEach(question_image=>{
                 let tagname = "#Img"+counter;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" draggable="false" alt="crestest_img" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" draggable="false" alt="new_img" class="image_responsive" />')
                 counter++;
             })
             if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                 final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
                 special_charectors_tags.forEach(tag_name=>{                
@@ -689,7 +689,7 @@ if(subject_id != 0 && group_exist == 1){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             })
             ////////////////////////////////////////////////////
             let option_image_ary = element['option_a_image'].split(',');
@@ -698,14 +698,14 @@ if(subject_id != 0 && group_exist == 1){
             option_image_ary.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_a;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_a++;
             })
             if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors/'))
                 final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
             special_charectors_tags.forEach(tag_name=>{                
@@ -713,7 +713,7 @@ if(subject_id != 0 && group_exist == 1){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -724,7 +724,7 @@ if(subject_id != 0 && group_exist == 1){
             option_image_ary_b.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_b;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_b++;
             })
             if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -737,7 +737,7 @@ if(subject_id != 0 && group_exist == 1){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -748,7 +748,7 @@ if(subject_id != 0 && group_exist == 1){
             option_image_ary_c.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_c;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_c++;
             })
 
@@ -763,7 +763,7 @@ if(subject_id != 0 && group_exist == 1){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -774,7 +774,7 @@ if(subject_id != 0 && group_exist == 1){
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                  counter_option_d++;
              })
              if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -788,7 +788,7 @@ if(subject_id != 0 && group_exist == 1){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
              ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -798,7 +798,7 @@ if(subject_id != 0 && group_exist == 1){
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -817,7 +817,7 @@ if(subject_id != 0 && group_exist == 1){
                         final_question_reason = (final_question_reason.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
                     }
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -1116,14 +1116,14 @@ question_image_ary.forEach(question_image=>{
     
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
     counter++;
 
     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
     {
         final_question = (final_question.replaceAll("../assets/special_charectors",'assets/special_charectors'))
         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
     }
     special_charectors_tags.forEach(tag_name=>{
     
@@ -1131,7 +1131,7 @@ question_image_ary.forEach(question_image=>{
         let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
         const replacer = new RegExp(tagname.toString(), 'g');
        
-        final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+        final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
     
     })
 })
@@ -1143,14 +1143,14 @@ let final_question_option_a = element_inner2['option_a'];
 option_image_ary.forEach(option_image=>{
     let tagname = "#Img"+counter_option_a;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_a++;
 })
 if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-    final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+    final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
 }
 
 special_charectors_tags.forEach(tag_name=>{
@@ -1159,7 +1159,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1171,14 +1171,14 @@ let final_question_option_b = element_inner2['option_b'];
 option_image_ary_b.forEach(option_image=>{
     let tagname = "#Img"+counter_option_b;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_b++;
 })
 if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-    final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+    final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
 }
 special_charectors_tags.forEach(tag_name=>{
     
@@ -1186,7 +1186,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1198,14 +1198,14 @@ let final_question_option_c = element_inner2['option_c'];
 option_image_ary_c.forEach(option_image=>{
     let tagname = "#Img"+counter_option_c;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_c++;
 })
 if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-    final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+    final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
 }
 special_charectors_tags.forEach(tag_name=>{
     
@@ -1213,7 +1213,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1225,14 +1225,14 @@ special_charectors_tags.forEach(tag_name=>{
  option_image_ary_d.forEach(option_image=>{
      let tagname = "#Img"+counter_option_d;
      const replacer = new RegExp(tagname.toString(), 'g');
-     final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+     final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
      counter_option_d++;
  })
  if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
  {
     final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-    final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+    final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
  }
  special_charectors_tags.forEach(tag_name=>{
     
@@ -1240,7 +1240,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
  ///////////////////////////////////////////////////////////
@@ -1252,7 +1252,7 @@ special_charectors_tags.forEach(tag_name=>{
  supporting_reason_ary.forEach(option_image=>{
      let tagname = "#Img"+counter_supporting_reason;
      const replacer = new RegExp(tagname.toString(), 'g');
-     final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+     final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
 
      counter_supporting_reason++;
  })
@@ -1263,7 +1263,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+    final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
 
 })
  ///////////////////////////////////////////////////////////
@@ -1487,14 +1487,14 @@ question_image_ary.forEach(question_image=>{
     
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
     counter++;
 
     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
     {
         final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
     }
 
     special_charectors_tags.forEach(tag_name=>{
@@ -1503,7 +1503,7 @@ question_image_ary.forEach(question_image=>{
         let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
         const replacer = new RegExp(tagname.toString(), 'g');
        
-        final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+        final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
     
     })
 })
@@ -1515,14 +1515,14 @@ let final_question_option_a = element_inner2['option_a'];
 option_image_ary.forEach(option_image=>{
     let tagname = "#Img"+counter_option_a;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_a++;
 })
 if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-    final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'));
+    final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'));
 }
 
 special_charectors_tags.forEach(tag_name=>{
@@ -1531,7 +1531,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1543,14 +1543,14 @@ let final_question_option_b = element_inner2['option_b'];
 option_image_ary_b.forEach(option_image=>{
     let tagname = "#Img"+counter_option_b;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_b++;
 })
 if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-    final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'));
+    final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'));
 }
 
 special_charectors_tags.forEach(tag_name=>{
@@ -1559,7 +1559,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1571,14 +1571,14 @@ let final_question_option_c = element_inner2['option_c'];
 option_image_ary_c.forEach(option_image=>{
     let tagname = "#Img"+counter_option_c;
     const replacer = new RegExp(tagname.toString(), 'g');
-    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
     counter_option_c++;
 })
 if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
 {
     final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-    final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'));
+    final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'));
 }
 special_charectors_tags.forEach(tag_name=>{
     
@@ -1586,7 +1586,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
 ///////////////////////////////////////////////////////////
@@ -1598,14 +1598,14 @@ special_charectors_tags.forEach(tag_name=>{
  option_image_ary_d.forEach(option_image=>{
      let tagname = "#Img"+counter_option_d;
      const replacer = new RegExp(tagname.toString(), 'g');
-     final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+     final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
      counter_option_d++;
  })
  if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
  {
     final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors",'assets/special_charectors'))
     final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-    final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'));
+    final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'));
  }
  special_charectors_tags.forEach(tag_name=>{
     
@@ -1613,7 +1613,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
    
-    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
 
 })
  ///////////////////////////////////////////////////////////
@@ -1625,7 +1625,7 @@ special_charectors_tags.forEach(tag_name=>{
  supporting_reason_ary.forEach(option_image=>{
      let tagname = "#Img"+counter_supporting_reason;
      const replacer = new RegExp(tagname.toString(), 'g');
-     final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+     final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
 
      counter_supporting_reason++;
  })
@@ -1636,7 +1636,7 @@ special_charectors_tags.forEach(tag_name=>{
     let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
     const replacer = new RegExp(tagname.toString(), 'g');
     
-    final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+    final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
 
 })
  ///////////////////////////////////////////////////////////
@@ -1991,14 +1991,14 @@ async function examscholaticquestion_module(data,userdata){
                     //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                     //console.log(string.replace(replacer, '/'));
 
-                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                     counter++;
                     })
                     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question = (final_question.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ////////////////////////////////////////////////////
                     let option_image_ary = element['option_a_image'].split(',');
@@ -2007,14 +2007,14 @@ async function examscholaticquestion_module(data,userdata){
                     option_image_ary.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_a;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_a++;
                     })
                     if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     ///////////////////////////////////////////////////////////
                     ////////////////////////////////////////////////////
@@ -2025,14 +2025,14 @@ async function examscholaticquestion_module(data,userdata){
                     option_image_ary_b.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_b;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_b++;
                     })
                     if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     ///////////////////////////////////////////////////////////
 
@@ -2043,14 +2043,14 @@ async function examscholaticquestion_module(data,userdata){
                     option_image_ary_c.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_c;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_c++;
                     })
                     if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
 
@@ -2061,14 +2061,14 @@ async function examscholaticquestion_module(data,userdata){
                     option_image_ary_d.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_d;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_d++;
                     })
                     if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
                     element['question'] = final_question;
@@ -2118,14 +2118,14 @@ let question_groups = [];
 
                     const replacer = new RegExp(tagname.toString(), 'g');
                     
-                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                     counter++;
                     })
                     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question = (final_question.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ////////////////////////////////////////////////////
                     let option_image_ary = element['option_a_image'].split(',');
@@ -2134,14 +2134,14 @@ let question_groups = [];
                     option_image_ary.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_a;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_a++;
                     })
                     if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
                     ////////////////////////////////////////////////////
@@ -2152,14 +2152,14 @@ let question_groups = [];
                     option_image_ary_b.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_b;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_b++;
                     })
                     if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     ///////////////////////////////////////////////////////////
 
@@ -2170,14 +2170,14 @@ let question_groups = [];
                     option_image_ary_c.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_c;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_c++;
                     })
                     if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
 
@@ -2188,14 +2188,14 @@ let question_groups = [];
                     option_image_ary_d.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_d;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_d++;
                     })
                     if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     
                     ///////////////////////////////////////////////////////////
@@ -2444,14 +2444,14 @@ async function examscholaticquestion_mock(data,userdata){
                     //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                     //console.log(string.replace(replacer, '/'));
 
-                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                     counter++;
                     })
                     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question = (final_question.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ////////////////////////////////////////////////////
                     let option_image_ary = element['option_a_image'].split(',');
@@ -2460,14 +2460,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_a;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_a++;
                     })
                     if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     ///////////////////////////////////////////////////////////
                     ////////////////////////////////////////////////////
@@ -2478,14 +2478,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_b.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_b;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_b++;
                     })
                     if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     ///////////////////////////////////////////////////////////
 
@@ -2496,14 +2496,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_c.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_c;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_c++;
                     })
                     if(final_question_option_c.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
 
@@ -2514,14 +2514,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_d.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_d;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_d++;
                     })
                     if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors",'assets/special_charectors'))
                         final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
                     element['question'] = final_question;
@@ -2569,14 +2569,14 @@ async function examscholaticquestion_mock(data,userdata){
 
                     const replacer = new RegExp(tagname.toString(), 'g');
                     
-                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                    final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                     counter++;
                     })
                     if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                         final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ////////////////////////////////////////////////////
                     let option_image_ary = element['option_a_image'].split(',');
@@ -2585,14 +2585,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_a;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_a++;
                     })
                     if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                         final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                     
                         ///////////////////////////////////////////////////////////
@@ -2604,7 +2604,7 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_b.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_b;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_b++;
                     })
 
@@ -2612,7 +2612,7 @@ async function examscholaticquestion_mock(data,userdata){
                     {
                         final_question_option_b = (final_question_option_b.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                         final_question_option_b = (final_question_option_b.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_b = (final_question_option_b.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
 
@@ -2623,7 +2623,7 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_c.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_c;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_c++;
                     })
 
@@ -2631,7 +2631,7 @@ async function examscholaticquestion_mock(data,userdata){
                     {
                         final_question_option_c = (final_question_option_c.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                         final_question_option_c = (final_question_option_c.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_c = (final_question_option_c.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
 
@@ -2642,14 +2642,14 @@ async function examscholaticquestion_mock(data,userdata){
                     option_image_ary_d.forEach(option_image=>{
                     let tagname = "#Img"+counter_option_d;
                     const replacer = new RegExp(tagname.toString(), 'g');
-                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                    final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                     counter_option_d++;
                     })
                     if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
                     {
                         final_question_option_d = (final_question_option_d.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                         final_question_option_d = (final_question_option_d.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                        final_question_option_d = (final_question_option_d.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
                     }
                         ///////////////////////////////////////////////////////////
                     element['question'] = final_question;
@@ -2770,7 +2770,7 @@ async function searchexamsquestions(data,userdata){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question = final_question?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                 counter++;
             })
             final_question = (final_question?.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
@@ -2783,7 +2783,7 @@ async function searchexamsquestions(data,userdata){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question = final_question?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             })
             let option_param = "";
             let option_param_image = "";
@@ -2818,7 +2818,7 @@ async function searchexamsquestions(data,userdata){
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d?.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             
                  counter_option_d++;
              })
@@ -2835,7 +2835,7 @@ async function searchexamsquestions(data,userdata){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" class="option_image_responsive" />')
             
             })*/
              ///////////////////////////////////////////////////////////
@@ -2847,7 +2847,7 @@ async function searchexamsquestions(data,userdata){
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -2861,7 +2861,7 @@ async function searchexamsquestions(data,userdata){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -2986,14 +2986,14 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 question_image_ary.forEach(question_image=>{
                 let tagname = "#Img"+counter;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" draggable="false" alt="crestest_img" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" draggable="false" alt="new_img" class="image_responsive" />')
                 counter++;
             })
             if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                 final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
                 special_charectors_tags.forEach(tag_name=>{                
@@ -3001,7 +3001,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             })
             ////////////////////////////////////////////////////
             let option_image_ary = element['option_a_image'].split(',');
@@ -3010,14 +3010,14 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
             option_image_ary.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_a;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_a++;
             })
             if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors",'assets/special_charectors/'))
                 final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
             special_charectors_tags.forEach(tag_name=>{                
@@ -3025,7 +3025,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -3036,7 +3036,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
             option_image_ary_b.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_b;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_b++;
             })
             if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -3049,7 +3049,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -3060,7 +3060,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
             option_image_ary_c.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_c;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_c++;
             })
 
@@ -3075,7 +3075,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -3086,7 +3086,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                  counter_option_d++;
              })
              if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -3100,7 +3100,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
              ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -3110,7 +3110,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -3129,7 +3129,7 @@ async function interm_examscholaticquestion(data,userdata,total_attempts,last_vi
                         final_question_reason = (final_question_reason.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
                     }
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////
@@ -3308,14 +3308,14 @@ async function casestudyquestoion_set(data,userdata){
                 question_image_ary.forEach(question_image=>{
                 let tagname = "#Img"+counter;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
                 counter++;
             })
             if(final_question.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question = (final_question.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                 final_question = (final_question.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors'))
-                final_question = (final_question.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question = (final_question.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
                 special_charectors_tags.forEach(tag_name=>{                
@@ -3323,7 +3323,7 @@ async function casestudyquestoion_set(data,userdata){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             })
             ////////////////////////////////////////////////////
             let option_image_ary = element['option_a_image'].split(',');
@@ -3332,14 +3332,14 @@ async function casestudyquestoion_set(data,userdata){
             option_image_ary.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_a;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_a++;
             })
             if(final_question_option_a.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
             {
                 final_question_option_a = (final_question_option_a.replaceAll("../assets/special_charectors", 'assets/special_charectors'))
                 final_question_option_a = (final_question_option_a.replaceAll("assets/special_charectors", process.env.IMAGEBASEURL+'assets/special_charectors/'))
-                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="crestest_img" draggable="false"'))
+                final_question_option_a = (final_question_option_a.replaceAll('alt=""', 'alt="new_img" draggable="false"'))
             }
 
             special_charectors_tags.forEach(tag_name=>{                
@@ -3347,7 +3347,7 @@ async function casestudyquestoion_set(data,userdata){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -3358,7 +3358,7 @@ async function casestudyquestoion_set(data,userdata){
             option_image_ary_b.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_b;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_b++;
             })
             if(final_question_option_b.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -3371,7 +3371,7 @@ async function casestudyquestoion_set(data,userdata){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -3382,7 +3382,7 @@ async function casestudyquestoion_set(data,userdata){
             option_image_ary_c.forEach(option_image=>{
                 let tagname = "#Img"+counter_option_c;
                 const replacer = new RegExp(tagname.toString(), 'g');
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                 counter_option_c++;
             })
 
@@ -3397,7 +3397,7 @@ async function casestudyquestoion_set(data,userdata){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
             ///////////////////////////////////////////////////////////
 
@@ -3408,7 +3408,7 @@ async function casestudyquestoion_set(data,userdata){
              option_image_ary_d.forEach(option_image=>{
                  let tagname = "#Img"+counter_option_d;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                 final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="option_image_responsive" />')
                  counter_option_d++;
              })
              if(final_question_option_d.search(process.env.IMAGEBASEURL+'assets/special_charectors') == -1)
@@ -3422,7 +3422,7 @@ async function casestudyquestoion_set(data,userdata){
                 let immage_tag_name = "assets/special_charectors/"+tag_name+".png";
                 const replacer = new RegExp(tagname.toString(), 'g');
                
-                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="option_image_responsive" />')
+                final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="option_image_responsive" />')
             })
              ///////////////////////////////////////////////////////////
             ////////////////////////////////////////////////////
@@ -3432,7 +3432,7 @@ async function casestudyquestoion_set(data,userdata){
              supporting_reason_ary.forEach(option_image=>{
                  let tagname = "#Img"+counter_supporting_reason;
                  const replacer = new RegExp(tagname.toString(), 'g');
-                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                 final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" draggable="false" class="image_responsive" />')
             
                  counter_supporting_reason++;
              })
@@ -3445,7 +3445,7 @@ async function casestudyquestoion_set(data,userdata){
                 //const string = 'e851e2fa-4f00-4609-9dd2-9b3794c59619';
                 //console.log(string.replace(replacer, '/'));
 
-                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="crestest_img" draggable="false" class="image_responsive" />')
+                final_question_reason = final_question_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+immage_tag_name+'" alt="new_img" draggable="false" class="image_responsive" />')
             
             })
              ///////////////////////////////////////////////////////////

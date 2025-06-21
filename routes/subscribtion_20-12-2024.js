@@ -593,7 +593,7 @@ router.post('/generateinvoicepdf', adminMiddleware.validateToken, async function
 	let file_1 = {
 		content: `<!DOCTYPE html>
 <head>
-<title>Crestest Learning Ventures Invoice</title>
+<title>new Learning Ventures Invoice</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -612,9 +612,9 @@ router.post('/generateinvoicepdf', adminMiddleware.validateToken, async function
         <table style="width:100%">
             <tr>
                 <td style="vertical-align: top;text-align:left;">
-                    <p style="font-weight: bold;font-size:8px;color:#000000;margin:0px;">Crestest Learning
+                    <p style="font-weight: bold;font-size:8px;color:#000000;margin:0px;">new Learning
                         Ventures</p>
-                    <p style="color: #000000;font-size:6px;line-height:8px;margin:0px;"> 1/23, Vivek Nagar Jheel Road,<br />Kolkata 700075<br />West Bengal<br />info@crestest.com
+                    <p style="color: #000000;font-size:6px;line-height:8px;margin:0px;"> 1/23, Vivek Nagar Jheel Road,<br />Kolkata 700075<br />West Bengal<br />info@new.com
                     </p><br />
                 </td>
                 <td style="vertical-align: top;text-align:left;float:right;">
@@ -930,7 +930,7 @@ async function downloadgenerateinvoicepdf(student_id, payment_trans_id) {
 	let file_1 = {
 		"content": `<!DOCTYPE html>
 <head>
-<title>Crestest Learning Ventures Invoice</title>
+<title>new Learning Ventures Invoice</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -949,9 +949,9 @@ async function downloadgenerateinvoicepdf(student_id, payment_trans_id) {
         <table style="width:100%">
             <tr>
                 <td style="vertical-align: top;text-align:left;">
-                    <p style="font-weight: bold;font-size:8px;color:#3a3a3a;margin:0px;">Crestest Learning
+                    <p style="font-weight: bold;font-size:8px;color:#3a3a3a;margin:0px;">new Learning
                         Ventures</p>
-                    <p style="color: #000;font-size:7px;line-height:8px;margin:0px;">1/23, Vivek Nagar Jheel Road, <br />Kolkata 700075<br />West Bengal<br />info@crestest.com
+                    <p style="color: #000;font-size:7px;line-height:8px;margin:0px;">1/23, Vivek Nagar Jheel Road, <br />Kolkata 700075<br />West Bengal<br />info@new.com
                     </p>
 					<p style="color: #000;font-size: 7px;margin:0px;">GST No - 19AAQFC3749N1ZM<br/>
 					<br/>

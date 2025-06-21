@@ -197,7 +197,7 @@ async function sendmail(req, res, next){
                       <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <div
                           style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:1;text-align:center;color:#ffffff;">
-                          Crestest Learning Ventures LLP</div>
+                          new Learning Ventures LLP</div>
                       </td>
                     </tr>
                   </tbody>
@@ -232,7 +232,7 @@ async function sendmail(req, res, next){
                                 style="background:#55acee;border-radius:3px;width:20px;">
                                 <tr>
                                   <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                      href="https://twitter.com/intent/tweet?url=https://twitter.com/CrestestL"
+                                      href="https://twitter.com/intent/tweet?url=https://twitter.com/newL"
                                       target="_blank"><img height="20"
                                         src="https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
                                         style="border-radius:3px;display:block;" width="20"></a></td>
@@ -240,7 +240,7 @@ async function sendmail(req, res, next){
                               </table>
                             </td>
                             <td style="vertical-align:middle;"><a
-                                href="https://twitter.com/intent/tweet?url=https://twitter.com/CrestestL"
+                                href="https://twitter.com/intent/tweet?url=https://twitter.com/newL"
                                 style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                                 target="_blank">Share</a></td>
                           </tr>
@@ -253,7 +253,7 @@ async function sendmail(req, res, next){
                                 style="background:#3b5998;border-radius:3px;width:20px;">
                                 <tr>
                                   <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                      href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/Crestest-Learning-100416625670686"
+                                      href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/new-Learning-100416625670686"
                                       target="_blank"><img height="20"
                                         src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
                                         style="border-radius:3px;display:block;" width="20"></a></td>
@@ -261,7 +261,7 @@ async function sendmail(req, res, next){
                               </table>
                             </td>
                             <td style="vertical-align:middle;"><a
-                                href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/Crestest-Learning-100416625670686"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/new-Learning-100416625670686"
                                 style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                                 target="_blank">Share</a></td>
                           </tr>
@@ -274,7 +274,7 @@ async function sendmail(req, res, next){
                                 style="background:#0077b5;border-radius:3px;width:20px;">
                                 <tr>
                                   <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                      href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/crestest-learning/&title=&summary=&source="
+                                      href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/new-learning/&title=&summary=&source="
                                       target="_blank"><img height="20"
                                         src="https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
                                         style="border-radius:3px;display:block;" width="20"></a></td>
@@ -282,7 +282,7 @@ async function sendmail(req, res, next){
                               </table>
                             </td>
                             <td style="vertical-align:middle;"><a
-                                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/crestest-learning/&title=&summary=&source="
+                                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/new-learning/&title=&summary=&source="
                                 style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                                 target="_blank">Share</a></td>
                           </tr>
@@ -478,7 +478,7 @@ async function sendmail(req, res, next){
                     <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                       <div
                         style="font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:18px;font-weight:bold;line-height:1;text-align:center;color:#ffffff;">
-                        Crestest Learning Ventures LLP</div>
+                        new Learning Ventures LLP</div>
                     </td>
                   </tr>
                 </tbody>
@@ -513,7 +513,7 @@ async function sendmail(req, res, next){
                               style="background:#55acee;border-radius:3px;width:20px;">
                               <tr>
                                 <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                    href="https://twitter.com/intent/tweet?url=https://twitter.com/CrestestL"
+                                    href="https://twitter.com/intent/tweet?url=https://twitter.com/newL"
                                     target="_blank"><img height="20"
                                       src="https://www.mailjet.com/images/theme/v1/icons/ico-social/twitter.png"
                                       style="border-radius:3px;display:block;" width="20"></a></td>
@@ -521,7 +521,7 @@ async function sendmail(req, res, next){
                             </table>
                           </td>
                           <td style="vertical-align:middle;"><a
-                              href="https://twitter.com/intent/tweet?url=https://twitter.com/CrestestL"
+                              href="https://twitter.com/intent/tweet?url=https://twitter.com/newL"
                               style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                               target="_blank">Share</a></td>
                         </tr>
@@ -534,7 +534,7 @@ async function sendmail(req, res, next){
                               style="background:#3b5998;border-radius:3px;width:20px;">
                               <tr>
                                 <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/Crestest-Learning-100416625670686"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/new-Learning-100416625670686"
                                     target="_blank"><img height="20"
                                       src="https://www.mailjet.com/images/theme/v1/icons/ico-social/facebook.png"
                                       style="border-radius:3px;display:block;" width="20"></a></td>
@@ -542,7 +542,7 @@ async function sendmail(req, res, next){
                             </table>
                           </td>
                           <td style="vertical-align:middle;"><a
-                              href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/Crestest-Learning-100416625670686"
+                              href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/new-Learning-100416625670686"
                               style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                               target="_blank">Share</a></td>
                         </tr>
@@ -555,7 +555,7 @@ async function sendmail(req, res, next){
                               style="background:#0077b5;border-radius:3px;width:20px;">
                               <tr>
                                 <td style="font-size:0;height:20px;vertical-align:middle;width:20px;"><a
-                                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/crestest-learning/&title=&summary=&source="
+                                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/new-learning/&title=&summary=&source="
                                     target="_blank"><img height="20"
                                       src="https://www.mailjet.com/images/theme/v1/icons/ico-social/linkedin.png"
                                       style="border-radius:3px;display:block;" width="20"></a></td>
@@ -563,7 +563,7 @@ async function sendmail(req, res, next){
                             </table>
                           </td>
                           <td style="vertical-align:middle;"><a
-                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/crestest-learning/&title=&summary=&source="
+                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.linkedin.com/company/new-learning/&title=&summary=&source="
                               style="color:#333333;font-size:13px;font-family:Ubuntu, Helvetica, Arial, sans-serif;line-height:22px;text-decoration:none;"
                               target="_blank">Share</a></td>
                         </tr>

@@ -561,7 +561,7 @@ async function send_verification_otp(data) {
     if (student_mobile != '') {
 
       let smsbody = config.registerotp.body.replace("#field1#",mobile_otp);
-          smsbody = smsbody.replace("#field2#",'+916289581169');// For Crestest MOBILE NO
+          smsbody = smsbody.replace("#field2#",'+916289581169');// For new MOBILE NO
       
       let smsdata = {phonenumber:student_mobile,body:encodeURI(smsbody)}
       helper.sendsms(smsdata);

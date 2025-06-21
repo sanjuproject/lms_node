@@ -140,7 +140,7 @@ router.post('/demoexamassesmentpdf',adminMiddleware.validateToken, async functio
 			doc.pipe(fs.createWriteStream(pdffilepath));
 
 
-			doc.image('assets/images/crestest-logo.png',0, 0, {
+			doc.image('assets/images/new-logo.png',0, 0, {
 				fit: [100, 130],
 				align: 'left',
 				valign: 'center'
@@ -317,7 +317,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 								let tagname = "#Img"+counter;
 								const replacer = new RegExp(tagname, 'g')
 
-								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								counter++;
 							})
 						}
@@ -334,7 +334,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 							 option_image_ary.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_a;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_a++;
 							 })
 							}
@@ -352,7 +352,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 							 option_image_ary_b.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_b;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_b++;
 							 })
 							}
@@ -371,7 +371,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 							 option_image_ary_c.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_c;
 								 const replacer = new RegExp(tagname, 'g');
-								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_c++;
 							 })
 							}
@@ -390,7 +390,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 							  option_image_ary_d.forEach(option_image=>{
 								  let tagname = "#Img"+counter_option_d;
 								  const replacer = new RegExp(tagname, 'g');
-								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								  counter_option_d++;
 							  })
 							}
@@ -409,7 +409,7 @@ router.post('/demoexamassessmentlist',adminMiddleware.validateToken, async funct
 							   reason_image.forEach(option_image=>{
 								let tagname = "#Img"+counter_reason;
 								const replacer = new RegExp(tagname, 'g');
-								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								   counter_reason++;
 							   })
 							}
@@ -1125,7 +1125,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 								let tagname = "#Img"+counter;
 								const replacer = new RegExp(tagname, 'g')
 
-								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								counter++;
 							})
 						}
@@ -1143,7 +1143,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 							 option_image_ary.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_a;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_a++;
 							 })
 							}
@@ -1162,7 +1162,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 							 option_image_ary_b.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_b;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_b++;
 							 })
 							}
@@ -1181,7 +1181,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 							 option_image_ary_c.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_c;
 								 const replacer = new RegExp(tagname, 'g');
-								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_c++;
 							 })
 							}
@@ -1200,7 +1200,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 							  option_image_ary_d.forEach(option_image=>{
 								  let tagname = "#Img"+counter_option_d;
 								  const replacer = new RegExp(tagname, 'g');
-								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								  counter_option_d++;
 							  })
 							}
@@ -1219,7 +1219,7 @@ router.post('/onlineexamassessmentlist_scholastic',adminMiddleware.validateToken
 							   reason_image.forEach(option_image=>{
 								let tagname = "#Img"+counter_reason;
 								const replacer = new RegExp(tagname, 'g');
-								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								   counter_reason++;
 							   })
 							}
@@ -1485,7 +1485,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 								let tagname = "#Img"+counter;
 								const replacer = new RegExp(tagname, 'g')
 
-								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								final_question = final_question.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+question_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								counter++;
 							})
 						}
@@ -1502,7 +1502,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 							 option_image_ary.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_a;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_a = final_question_option_a.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_a++;
 							 })
 							}
@@ -1520,7 +1520,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 							 option_image_ary_b.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_b;
 								 const replacer = new RegExp(tagname, 'g')
-								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_b = final_question_option_b.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_b++;
 							 })
 							}
@@ -1539,7 +1539,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 							 option_image_ary_c.forEach(option_image=>{
 								 let tagname = "#Img"+counter_option_c;
 								 const replacer = new RegExp(tagname, 'g');
-								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								 final_question_option_c = final_question_option_c.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								 counter_option_c++;
 							 })
 							}
@@ -1558,7 +1558,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 							  option_image_ary_d.forEach(option_image=>{
 								  let tagname = "#Img"+counter_option_d;
 								  const replacer = new RegExp(tagname, 'g');
-								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="option_image_responsive" />')
+								  final_question_option_d = final_question_option_d.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="option_image_responsive" />')
 								  counter_option_d++;
 							  })
 							}
@@ -1577,7 +1577,7 @@ router.post('/onlineexamassessmentlist_competitive',adminMiddleware.validateToke
 							   reason_image.forEach(option_image=>{
 								let tagname = "#Img"+counter_reason;
 								const replacer = new RegExp(tagname, 'g');
-								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="crestest_img" class="image_responsive" />')
+								   final_reason = final_reason.replace(replacer,' <img src="'+process.env.IMAGEBASEURL+option_image.substring(1)+'" alt="new_img" class="image_responsive" />')
 								   counter_reason++;
 							   })
 							}
